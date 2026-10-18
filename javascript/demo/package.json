@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "webpack --mode production --entry ./src/main.js"
+  },
+  "dependencies": {
+    "@openai/harmony": "^0.1.0",
+    "webpack": "^5.0.0"
+  }
+}
