@@ -1,0 +1,39 @@
+# Compiled files
+target/
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+out/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+*.o
+*.so
+*.dll
+*.pyc
+__pycache__/
+
+# Avoid ignoring shadcn utils
+!demo/harmony-demo/src/lib
