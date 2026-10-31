@@ -22,7 +22,7 @@ impl FormattingToken {
             "<|end_of_text|>" => FormattingToken::EndOfBlock,
             "<|start_header_id|>" => FormattingToken::StartText,
             "<|end_header_id|>" => FormattingToken::EndText,
-            "<|meta_sep|>" => FormattingToken::MetaSep, // Fixed: was incorrectly "<|channel|>"
+            "<|meta_sep|>" => FormattingToken::MetaSep,
             "<|meta_end|>" => FormattingToken::MetaEnd,
             "<|channel|>" => FormattingToken::Channel,
             "<|system|>" => FormattingToken::System,
@@ -38,7 +38,7 @@ impl FormattingToken {
             FormattingToken::EndOfBlock => "<|end_of_text|>",
             FormattingToken::StartText => "<|start_header_id|>",
             FormattingToken::EndText => "<|end_header_id|>",
-            FormattingToken::MetaSep => "<|meta_sep|>", // Fixed: was incorrectly "<|channel|>"
+            FormattingToken::MetaSep => "<|meta_sep|>",
             FormattingToken::MetaEnd => "<|meta_end|>",
             FormattingToken::Channel => "<|channel|>",
             FormattingToken::System => "<|system|>",
@@ -63,8 +63,8 @@ impl HarmonyEncoding {
         formatting_tokens.insert(FormattingToken::EndOfBlock, "<|end_of_text|>".to_string());
         formatting_tokens.insert(FormattingToken::StartText, "<|start_header_id|>".to_string());
         formatting_tokens.insert(FormattingToken::EndText, "<|end_header_id|>".to_string());
-        formatting_tokens.insert(FormattingToken::MetaSep, "<|meta_sep|>".to_string()); // Fixed registration
-        formatting_tokens.insert(FormattingToken::MetaEnd, "<|meta_end|>".to_string()); // Fixed registration
+        formatting_tokens.insert(FormattingToken::MetaSep, "<|meta_sep|>".to_string());
+        formatting_tokens.insert(FormattingToken::MetaEnd, "<|meta_end|>".to_string());
         formatting_tokens.insert(FormattingToken::Channel, "<|channel|>".to_string());
         formatting_tokens.insert(FormattingToken::System, "<|system|>".to_string());
         formatting_tokens.insert(FormattingToken::User, "<|user|>".to_string());
